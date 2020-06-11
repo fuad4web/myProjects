@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="myquiz.css">
+</head>
+<body>
+  <div id="start">
+    Start Quiz<br>
+    You have 10 seconds<br>
+    to answer each<br>
+    question<br>
+    Goodluck to you.
+  </div>
+   <div class="quiz-container" id="quiz" style="display: none;">
+     <div class="question-number">
+      <h3>Question <span class="question-num-value active">1</span> of <span class="total-question">5</span></h3>
+     </div>
+     <div class="question">
+
+     </div>
+     <div class="options">
+      <div id="0" class="option1" onclick="check(this)"></div>
+      <div id="1" class="option2" onclick="check(this)"></div>
+      <div id="2" class="option3" onclick="check(this)"></div>
+      <div id="3" class="option4" onclick="check(this)"></div>
+     </div>
+     <div class="button">
+      <button type="button" class="btn" id="btn2">Prev</button>
+      <button type="button" class="btn" id="btn1" onclick="next()">Next</button>
+     </div>
+     <div class="answers-tracker">
+
+     </div>
+    <div class="quiz-over">
+      <div class="box">
+        <h1>Time Up: <h1 class="setTime">10</h1>
+      <h1>
+        <span class="comment">Good try!!!</span>  <br />
+        You got <span class="correct-answers">3</span> out of <span class="total-question2">5</span> questions <br />
+        That's <span class="percentage">60%</span>
+      </h1>
+      <button type="button" id="tryAgain" onclick="tryAgain()">Try Again Later</button>
+      </div>
+    </div>
+  </div>
+  <script src="myquiz.js"></script>
+</body>
+</html>
